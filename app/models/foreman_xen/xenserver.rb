@@ -373,6 +373,9 @@ module ForemanXen
         :xenserver_url                => url,
         :xenserver_username           => user,
         :xenserver_password           => password,
+        :xenserver_use_ssl            => true,
+        :xenserver_verify_mode        => OpenSSL::SSL::VERIFY_NONE,
+        :xenserver_port               => 443,
         :xenserver_redirect_to_master => true
       )
     end
